@@ -1,0 +1,11 @@
+T,stage,median_us,q1_us,q3_us
+0,plain ML-DSA (floor),53.10,48.13,59.61
+1024,parse & reconstruct,0.02,0.02,0.03
+1024,Merkle path,11.25,9.94,13.89
+1024,ML-DSA verify,54.65,47.07,67.61
+65536,parse & reconstruct,0.02,0.02,0.03
+65536,Merkle path,14.25,12.70,16.95
+65536,ML-DSA verify,53.22,46.96,61.24
+1048576,parse & reconstruct,0.02,0.02,0.03
+1048576,Merkle path,18.03,15.33,20.50
+1048576,ML-DSA verify,56.09,48.34,63.46

@@ -1,0 +1,7 @@
+scheme,secret_key_B,aux_state_B,total_signer_B,source,note
+evML-DSA (T=2^20),6496,12800,19296,measured,"tree secrets 2646 + cached leaf 3872 + fractal Merkle 12800; prototype full-tree = 67MB (not asymptotic)"
+plain ML-DSA-44,2560,0,2560,measured,"no FS state"
+Dilithium-rechain,5120,238848,243968,measured,"root sk + current sk + cert chain @d=64; chain grows with d"
+LMS/HSS (N32-H20),64,2796196,2796260,measured,"hss aux data from B1_lms.txt actual usage"
+XMSS (ref),132,0,132,measured,"state embedded in sk"
+FROG,,,,unavailable,"no reproducible implementation"

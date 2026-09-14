@@ -1,0 +1,8 @@
+rechain setup per period (keypair+cert): 304.9 us
+rechain accumulated size at d=64: 238848 B (certs) + sig
+rechain sign: 417.2 us
+rechain verify @d=1: 308.6 us
+rechain verify @d=8: 814.3 us
+rechain verify @d=32: 3962.8 us
+rechain verify @d=63: 6496.1 us
+plain ML-DSA-44 verify: 63.3 us

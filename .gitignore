@@ -1,0 +1,29 @@
+# build artifacts
+src/evmldsa/ev_selftest
+src/evmldsa/ev_test
+src/evmldsa/ev_c4_selftest
+src/evmldsa/ev_c4_selftest65
+src/evmldsa/bench
+src/evmldsa/bench65
+src/evmldsa/bench_rechain
+src/evmldsa/bench_workload
+src/evmldsa/figdata_bench
+src/evmldsa/extended_bench
+src/evmldsa/breakdown_bench
+src/evmldsa/sizeof_check
+src/evmldsa/sizeof_check65
+src/baselines/bench_lms
+src/baselines/bench_xmss
+*.o
+*.out
+# python
+__pycache__/
+*.pyc
+# OS junk
+.DS_Store
+Thumbs.db
+*Zone.Identifier*
+# generated figure outputs
+figures/*.pdf
+figures/*.png
+figures/*.svg

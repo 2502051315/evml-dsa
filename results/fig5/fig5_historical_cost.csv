@@ -1,0 +1,7 @@
+scheme,representative_setting,hist_evidence_B,hist_verify_us,source,note
+evML-DSA (T=2^20),d=64 (distance-independent),4344,77.1,measured,"self-contained signature; constant cost; verify = pooled median of distance benchmark (fig4/rechain_distance_extended_raw.csv, n=300)"
+Dilithium-rechain,d=64,241268,5116.4,measured,"sig 2420 + cert chain 238848 @d=64; verify = median @d=64 (fig4/rechain_distance_extended_raw.csv, n=100)"
+LMS/HSS (N32-H20),any (stateful self-contained),1776,212.0,measured,"self-contained; no chain growth"
+XMSS (ref) h=10,any (stateful self-contained),2500,624.0,measured,"self-contained; reference impl"
+plain ML-DSA-44,,,53.1,measured,"not forward-secure; no historical semantics (53.1 = current-period verify floor, not plotted as historical)"
+FROG,,,,unavailable,"no reproducible implementation"

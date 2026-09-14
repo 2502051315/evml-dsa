@@ -1,0 +1,15 @@
+experiment,parameter,value
+sign_batch_us,1,77.9
+sign_throughput_sps,1,12834.0
+sign_batch_us,100,30786.9
+sign_throughput_sps,100,3248.1
+sign_batch_us,10000,4983958.1
+sign_throughput_sps,10000,2006.4
+archive_n,,16384
+archive_verify_us,,2528271.1
+archive_verify_failures,,0
+archive_verify_per_us,,154.31
+stability_failures,,0
+sign_mean_us_firsthalf,,590.11
+sign_mean_us_secondhalf,,546.49
+drift_ratio,,0.9261

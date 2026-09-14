@@ -1,0 +1,25 @@
+repo    : cisco/hash-sigs (BSD-3-Clause), https://github.com/cisco/hash-sigs
+commit  : 44e6c7d (2026-09-04)
+scheme  : LMS (RFC 8554 class, single-level HSS), single-threaded build
+params  : 1 level, LMS_SHA256_N32_H20 + LMOTS_SHA256_N32_W8
+note    : plan asked for LMS_SHA256_M24_H20; that macro does NOT exist in this commit (common_defs.h defines only N32 variants), so the closest set LMS_SHA256_N32_H20 is used
+flags   : gcc -O3 -Wall -Wno-deprecated-declarations; links -lcrypto -lpthread -lm; SHA-256 from OpenSSL libcrypto (legacy SHA256_* API)
+reps    : keygen x1, working-key load x1, sign x100 sequential, verify x100; clock=CLOCK_MONOTONIC
+
+param_set: 1 level(s), lm[0]=0x00000008 (LMS_SHA256_N32_H20), ots[0]=0x00000004 (LMOTS_SHA256_N32_W8)
+aux_data: budget=8388608 bytes, actually used=2796196 bytes (kept in RAM)
+keygen (once)          : 618213.996 ms  (618.214 s)
+load working key (once): 9.172 ms  (0.009 s)
+sign (sequential)            n=100  first=   4.507  mean=   4.496  median=   4.169  stdev=   0.951  min=   3.572  max=   7.903  (ms)
+sign amortized over 100 : 4.496 ms/sig (incl. leaf derivation)
+verify                       n=100  first=   0.220  mean=   0.238  median=   0.212  stdev=   0.135  min=   0.135  max=   1.382  (ms)
+verify valid/total     : 100/100
+
+sizes:
+  signature : 1776 bytes (returned length)
+  public key: 60 bytes (hss_get_public_key_len)
+  private key: 64 bytes (hss write callback, RAM only)
+  aux data  : 2796196 bytes
+
+exit_code: 0
+environment: gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 | pinned: taskset -c 9 | cpu: Intel(R) Core(TM) Ultra 9 275HX | 6.6.87.2-microsoft-standard-WSL2

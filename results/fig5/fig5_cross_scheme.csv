@@ -1,0 +1,7 @@
+scheme,sig_B,pk_B,sign_us,verify_us,source,note
+evML-DSA (T=2^20),4344,68,423.908435777872,68.85,measured,
+Dilithium-rechain,2420,1312,417.0,217.05,measured,sig excludes 239KB chain @d=64
+LMS/HSS (N32-H20),1776,60,4169.0,212.0,measured,"hash-sigs, one-time leaves"
+XMSS (ref),2500,64,1801696.0,624.0,measured,reference impl; h=10
+plain ML-DSA-44,2420,1312,317.4941914285714,53.1,measured,non-FS reference
+FROG,13926,,,,reported,literature sig size only

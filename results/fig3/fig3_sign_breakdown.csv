@@ -1,0 +1,10 @@
+T,stage,median_us,q1_us,q3_us
+1024,message build,0.04,0.02,0.06
+1024,ML-DSA sign,206.52,128.46,328.99
+1024,path & packaging,0.11,0.08,0.19
+65536,message build,0.04,0.03,0.06
+65536,ML-DSA sign,200.97,122.17,344.22
+65536,path & packaging,0.14,0.09,0.26
+1048576,message build,0.04,0.02,0.06
+1048576,ML-DSA sign,209.01,128.43,344.38
+1048576,path & packaging,0.15,0.09,0.29
