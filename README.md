@@ -130,7 +130,7 @@ components keep their upstream licenses.
 ```bibtex
 @misc{evmldsa-artifact,
   title  = {evML-DSA: Reference Implementation and Measurement Artifact},
-  author = {evML-DSA authors},
+  author = {Guanyu Yan and Jinqing Li and Xiaoqiang Di},
   year   = {2026},
   note   = {Source code accompanying the paper "Forward-Secure ML-DSA:
             Key-Evolving Post-Quantum Signatures for Long-Lived Digital
